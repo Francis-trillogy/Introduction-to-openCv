@@ -2,10 +2,13 @@
 **OpenCV (Open Source Computer Vision Library)** is an open source computer vision and machine learning software library. OpenCV was built to provide a common infrastructure for computer vision applications and to accelerate the use of machine perception in the commercial products. 
 Being a BSD-licensed product, OpenCV makes it easy for businesses to utilize and modify the code. The license implies that it is free to use for both academic and commercial use. 
 It supports a couple of programming languages namely: python, java, c and C++. On the other hand, it supports Windows, Linux, Mac Os and even the Android operating systems.
+
 ###Installation
-#####Python
+
+Python
     • run command below:
-    • pip install opencv-python*
+    • pip install opencv-python
+    
 #####Conda Envirnment
     • run the following commands:
     • conda install -c conda-forge opencv
@@ -20,8 +23,8 @@ Reading an Image in OpenCV:
 We will use the OpenCV function cv2.imread().
     • The function cv2.imread() requires two arguments: the first is the path to the image itself and the second specifies the way the image should be read.
     • What are some of these specifications? Here we go:
-    1. **cv2.IMREAD_COLOR** — this flag in particular is used to load a color image. 
-         It neglects the image transparency and is the default flag. It is mostly for 8-bit images that don’t have the alpha channel.
+    
+    1. **cv2.IMREAD_COLOR** — this flag in particular is used to load a color image. It neglects the image transparency and is the default flag. It is mostly for          8-bit images that don’t have the alpha channel.
     2.. **cv2.IMREAD_GRAYSCALE** — it is responsible for loading our images in grayscale.
     3.. **cv2.IMREAD_UNCHANGED** — It loads an image using alpha channel(RGBA). You can also pass integers 1, 0, -1 respectively in place of the flags.
 
